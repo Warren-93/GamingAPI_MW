@@ -1,0 +1,17 @@
+//agent code
+
+function getReadings(readings) {
+    local url = "https://mayar.abertay.ac.uk/~1605460/Web_Dev/GamingAPI/IOT.php";
+    local headers = { "Content-Type" : "application/json"} ;
+    
+    server.log (format("Temperature: %.2fC, %.2fF\nVoltage: %.2fV\nLight Level: %.2f", readings.temp.celsius, readings.temp.fahrenheit, readings.volt.age, readings.light.level)) ;
+    local body = (format("?cel=%.2f&fahr=%.2f&volt=%.2f&light=%.2f", readings.temp.celsius, readings.temp.fahrenheit, readings.volt.age, readings.light.level));
+
+    server.log((url + body));
+    local request = http.get(url + body);
+    local response = request.sendsync();
+
+    //local jsonReadings = http.jsonencode(readings) ;
+   }
+
+device.on("eiData", getReadings);

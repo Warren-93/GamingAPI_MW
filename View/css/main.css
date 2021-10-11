@@ -1,0 +1,79 @@
+
+
+/* ==========================================================================
+    custom styles
+   ========================================================================== */
+
+
+h2{
+    text-align: center; 
+}
+
+h5{    
+    text-align: center;
+}
+         
+
+/* General sizing */
+ul.dropdown-lr {
+  width: 300px;
+  background-color: #565252;
+}
+
+.dropdown-lr h3 {
+    color: #eee;
+}
+.dropdown-lr label {
+    color: #eee;
+}
+
+.dropdown-menu>li>a {
+        color: #eee;
+    
+}
+
+#comments{
+    background-color: black;
+    
+    
+}
+
+footer {
+    margin-top: 50px;
+    background-color: black;
+}
+
+.img-fluid{
+    padding-left: 20%;
+}
+
+#article{
+    padding-left: 30%;
+    height: 20px;
+    width: max-content;
+}
+
+/* mobile fix */
+@media (max-width: 768px) {
+	.dropdown-lr h3 {
+		color: #eee;
+	}
+	.dropdown-lr label {
+		color: #eee;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

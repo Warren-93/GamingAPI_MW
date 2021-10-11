@@ -1,0 +1,110 @@
+
+/* 
+    Created on : 15-Feb-2019, 11:51:44
+    Author     : mrren
+*/
+
+/* These apply across all breakpoints because they are outside of a media query */
+.iotData thead th,
+.iotData tbody th .ui-table-cell-label,
+.iotData tbody td .ui-table-cell-label {
+    text-transform: uppercase;
+    font-size: .7em;
+    color: white;
+    font-weight: normal;
+}
+
+.iotData tbody th {
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #77bbff;
+    text-align: center;
+}
+
+.iotData tbody td.title {
+    padding-left: .8em;
+}
+
+.iotData thead th {
+    border-bottom: 1px solid #d6d6d6; /* non-RGBA fallback */
+    border-bottom: 1px solid black;
+}
+.iotData tbody th,
+.iotData tbody td {
+    border-bottom: 1px solid #e6e6e6; 
+    border-bottom: 1px solid black;
+}
+
+@media (max-width: 40em) {
+    /*  Negate the margin between sections */
+    .iotData tbody th {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .iotData tbody th,
+    .iotData tbody td.title {
+        display: block;
+        font-size: 1.2em;
+        line-height: 110%;
+        padding: .5em .5em;
+        background-color: white;
+        color: #77bbff;
+        -moz-box-shadow: 0 1px 6px black;
+        -webkit-box-shadow: 0 1px 6px black;
+        box-shadow: 0 1px 6px black;
+    }
+    
+    .iotData tbody th .ui-table-cell-label,
+    .iotData tbody td.title .ui-table-cell-label {
+        display: none;
+    }
+    
+    .iotData tbody td.title {
+        margin-top: -2.1em;
+        padding-left: 2.2em;
+        border-bottom: 1px solid black;
+    }
+    
+    .iotData th,
+    .iotData td {
+        font-weight: bold;
+    }
+    
+    .iotData td .ui-table-cell-label,
+    .iotData th .ui-table-cell-label {
+        min-width: 10%;
+    }
+}
+
+@media ( min-width: 40em ) {
+    
+    .iotData td,
+    .iotData th,
+    .iotData tbody th,
+    .iotData tbody td,
+    .iotData thead td,
+    .iotData thead th {
+        display: table-cell;
+        margin: 2%;
+    }
+    
+    .iotData td .ui-table-cell-label,
+    .iotData th .ui-table-cell-label {
+        display: none;
+    }
+}
+
+@media ( max-width: 40em ) {
+    .iotData td,
+    .iotData th {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        float: left;
+        clear: left;
+    }
+}
+    
+   
